@@ -1,0 +1,13 @@
+<suite name="SanthiPriya"  >
+  <test name="Smoke" >
+   <parameter name = "url" value="https://www.cleartrip.com/"/>
+  
+    <classes>
+ 
+<class name="cleartrip.TestSearch" />
+
+
+
+    </classes>
+  </test>
+</suite>

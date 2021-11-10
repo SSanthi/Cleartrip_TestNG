@@ -19,15 +19,19 @@ public class PageElements
 	}
 	@FindBy(xpath = "/html/body/div[1]/div/div/div[1]/div/div[2]/div/div[3]/div[1]/div[1]/div/div/div/input")
 	WebElement SearchFrom;
-	public void SetSearchFrom(String city)
+	public void SetSearchFrom(String city) throws Exception
     {
+		SearchFrom.clear();
+		Thread.sleep(1500);
     	SearchFrom.sendKeys(city);
     }
 	
 	@FindBy(xpath = "/html/body/div[1]/div/div/div[1]/div/div[2]/div/div[3]/div[1]/div[5]/div/div/div/input")
 	WebElement SearchTo;
-	public void SetSearchTo(String city)
+	public void SetSearchTo(String city) throws Exception
 	{
+		SearchTo.clear();
+		Thread.sleep(1500);
 		SearchTo.sendKeys(city);
 	}
 
@@ -67,7 +71,7 @@ public class PageElements
 	{
 		DepartOn.click();
 	}
-	@FindBy(xpath="//*[@id='root']/div/div/div[1]/div/div[2]/div/div[3]/div[3]/div/div/div/div/div/ul/div[2]/div/div[2]/div[1]/div[3]/div[5]/div[7]/div/div")
+	@FindBy(xpath="//*[@id='root']/div/div/div[1]/div/div[2]/div/div[3]/div[3]/div/div/div/div/div/ul/div[2]/div/div[2]/div[1]/div[3]/div[2]/div[3]/div/div")
 	WebElement DepartOnDate;
 	public void SelectDepartOnDate()
 	{

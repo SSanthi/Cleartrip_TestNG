@@ -12,7 +12,7 @@ public class TestBase {
 	    @BeforeClass
 	    public void beforeClass(String url)
 	    {
-	    	System.setProperty("webdriver.chrome.driver", "C:\\Users\\ravik\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
+	    	System.setProperty("webdriver.chrome.driver", "C:\\Users\\ravik\\Downloads\\chromedriver_win32 (2)\\chromedriver.exe");
 	        driver = new ChromeDriver();
 	        driver.get(url);
 	        driver.manage().window().maximize();
